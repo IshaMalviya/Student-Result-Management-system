@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.css"> 
+  
+  <title> STUDENT RESULT MANAGEMENT SYSTEM</title>
+</head>
+
+
+
+
+  <script>
+    function validation()
+    {
+     var name=document.getElementById("name").value;
+     var email=document.getElementById("email").value;
+     var phone=document.getElementById("phone").value;
+     var query=document.getElementById("query").value;
+     
+     if(name=="")
+     {
+       alert("Please Enter Name");
+     }
+     else if(email=="")
+     {
+       alert("Please Enter Email Id");
+     }
+     else if(phone=="")
+     {
+       alert("Please Enter Phone no");
+     }
+     else if(query=="")
+     {
+       alert("Please Write Query");
+     }
+     else 
+     {
+       alert("Message Send Successfully");
+     }
+    }
+  </script>
+<div class="contact">
+
+<body>
+<nav>
+        <div class="logo">
+            SGSITS
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="student.html">STUDENT PORTAL</a></li>
+            <li><a href="admin.html">ADMIN PORTAL</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+   
+     
+    <div class="container-contact">
+       
+  
+      <div class =" contact-box">
+        <div class = "contact-left">
+  
+                
+        <div class =" box">
+        <div class = "icon"><i class="fa fa-map-marker"></i><h2> Address</h2></div>
+          <div class =" text">
+                   
+          <p> 23 Sir M. Visvesvaraya Marg,<br> Indore, Madhya Pradesh(452003)</p>
+         </div></div>
+      <br><br>
+          <h2 > HELP & SUPPORT</h2>
+      
+           <div class = "box">
+          <div class = "icon"><i class="fa fa-phone"></i></div>
+          <div class =" text">
+            <h2> Phone</h2>
+            <p> 8989011204</p>
+          </div></div>
+        <div class =" box">
+          <div class = "icon"><i class="fa fa-envelope-o"></i></div>
+          <div class =" text">
+      <h2> Email</h2>
+       <p> support@sgsitsindore.in</p>
+     </div></div>
+
+</div>
+      
+
+       <div class ="contact-right">
+            
+            <form>
+              <h1> Contact Us</h1>
+
+            <div class ="input-row"> 
+              <div class ="input-group">
+
+    <label for="name">NAME</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+      <br></div></div>
+
+      <div class ="input-row"> 
+              <div class ="input-group">
+    <label for="name">EMAIL</label>
+    <input type="email" id="email" name="email" placeholder="Enter email address">
+      <br></div></div>
+
+      <div class ="input-row"> 
+              <div class ="input-group">
+    <label for="name">PHONE NO.</label>
+    <input type="text" id="phone" name="phone" placeholder="Enter Phone No.">
+
+      <br></div></div>
+    
+     <div class ="input-row"> 
+              <div class ="input-group">
+    <label for="name">QUERY</label>
+    <textarea name="query" id="query" rows="" placeholder="Enter Query"></textarea>
+
+      <br></div></div>
+    <button type="submit" value="submit" class="btn" onclick="validation()" >Send </button>
+
+</form> 
+    </div> </div>
+  
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins: whgt@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+  margin: 0;
+padding:0;
+font-family: 'poppins',sans-serif;
+
+}
+body{
+  background-image:  url(contact-image.jpg);
+
+        
+        background-size: cover;
+        background-position: center;
+        
+}
+.container-contact{
+  
+  width : 900px ;
+    height: 650px;
+    
+    top: 15%;
+    left: 20%;
+    position: absolute;
+   box-sizing: border-box; 
+    padding: 40px 30px;
+}
+.contact-box{
+
+  background: #fff;
+  display: flex;
+
+}
+.contact-left {
+  
+  width : 40%;
+  height: 500px;
+
+  padding: 40px;
+  background: #585858;
+  color : #fff;
+}
+.contact-right {
+display: flex;
+  flex-basic: 30%;
+
+justify-content: left;
+align-content: left;
+  padding: 30px 40px;
+ 
+}
+.contact-right h1{
+  font-size: 25;
+  font-weight: 500;
+  color:#585858 ;
+}
+.container-contact h2 {
+  margin-left: 20px;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 300;
+}
+.container p{
+font-weight: 400;
+}
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row , .input-group{
+  flex-direction: left;
+  flex-basis: 45%
+
+}
+form{
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+}
+input{
+border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+   height: 20px;
+    color: black;
+    width: 300px;
+font-size: 15px;
+border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+padding : 10px;
+
+}
+textarea{
+width: 300px;
+border: 1px solid #ccc;
+outline: none;
+padding: 20px;
+border-radius: 5px;
+ font-size: 15px;
+
+}
+label{
+  margin-bottom: 6px;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10 px 0px;
+  color : #585858;
+}
+button { background: #585858;
+;
+  width: 100px;
+  border:none ;
+  outline: none;
+  color: #fff;
+  height: 40px;
+  font-size: 18px ;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5pxx 15px 0px rgba(28,0,18,0.3);
+
+}
+</style>
+ <footer>
+  
+</footer>
+
+</body></div>
+</html>
